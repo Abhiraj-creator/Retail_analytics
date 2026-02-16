@@ -43,8 +43,8 @@ create table if not exists customers (
         product_id integer,
         quantity integer,
         foreign key(order_id) references orders (order_id),
-        foreign key (product_id) references product (product_id)
-    )
+        foreign key (product_id) references products (product_id)
+
     """
     )
     conn.commit()
